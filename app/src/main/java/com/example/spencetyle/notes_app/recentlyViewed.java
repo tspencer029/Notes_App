@@ -17,7 +17,7 @@ public class recentlyViewed extends Activity {
     }
 
     public void onClick(View view) {
-        if(view.getId()==R.id.recentlyViewed) {
+        if(view.getId()==R.id.subjects) {
             Intent i = new Intent(recentlyViewed.this, subjectsJava.class);
             startActivity(i);
         }
