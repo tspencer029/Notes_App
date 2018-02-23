@@ -17,14 +17,6 @@
         android:orientation="horizontal">
 
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:background="@color/colorAccent"
-            app:srcCompat="@drawable/ic_menu_button_white" />
-
         <TextView
             android:id="@+id/main_title"
             android:layout_width="match_parent"
@@ -33,7 +25,6 @@
             android:background="@color/colorAccent"
             android:gravity="center"
             android:text="Notes App"
-            android:fontFamily="@font/ConcertOne-Regular"
             android:textSize="35sp" />
     </LinearLayout>
 
@@ -52,7 +43,7 @@
             android:layout_weight="1"
             android:text="Chemistry"
             android:textSize="45sp"
-            android:fontFamily="@font/DidactGothic-Regular" />
+            />
 
         <Button
             android:id="@+id/physics_button"
@@ -61,8 +52,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:text="Physics"
-            android:textSize="45sp"
-            android:fontFamily="@font/DidactGothic-Regular"/>
+            android:textSize="45sp" />
 
         <Button
             android:id="@+id/bio_button"
@@ -71,8 +61,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:text="Biology"
-            android:textSize="45sp"
-            android:fontFamily="@font/DidactGothic-Regular"/>
+            android:textSize="45sp" />
     </LinearLayout>
 
 </LinearLayout>
