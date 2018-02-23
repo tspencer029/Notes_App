@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical"
-    tools:context="com.example.spencetyle.notes_app.subjectsJava">
+    tools:context="com.example.spencetyle.notes_app.MainActivity">
 
 
     <LinearLayout
@@ -26,7 +26,7 @@
             android:background="@color/background"
             android:fontFamily="@font/concert_one"
             android:gravity="center"
-            android:text="Notes App"
+            android:text="ZyNotes"
             android:textSize="40sp" />
     </LinearLayout>
 
@@ -36,20 +36,18 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/recentlyViewed"
+            android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Recently Viewed"
-            android:onClick="onClick"/>
+            android:text="Recently Viewed" />
 
         <Button
-            android:id="@+id/subjects"
+            android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Subjects"
-            android:onClick="onClick"/>
+            android:text="Subjects" />
     </LinearLayout>
 
     <LinearLayout
