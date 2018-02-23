@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical"
-    tools:context="com.example.spencetyle.notes_app.MainActivity">
+    tools:context="com.example.spencetyle.notes_app.subjectsJava">
 
     <LinearLayout
         android:id="@+id/header"
@@ -25,6 +25,7 @@
             android:background="@color/background"
             android:fontFamily="@font/concert_one"
             android:gravity="center"
+            android:paddingBottom="10dp"
             android:text="Notes App"
             android:textSize="40sp" />
 
@@ -36,18 +37,21 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/recentlyViewed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             android:text="Recently Viewed" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/subjects"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Subjects" />
+            android:text="Subjects"
+            android:onClick="onClick"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -61,7 +65,7 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/noteTitle"
+            android:id="@+id/noteTitle1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/madeleineTestColor"
@@ -70,7 +74,7 @@
             android:paddingRight="20dp">
 
             <TextView
-                android:id="@+id/noteTitleText1"
+                android:id="@+id/redoxTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -78,7 +82,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/didact_gothic"
                 android:padding="10dp"
-                android:text="Note Title"
+                android:text="Redox Reactions"
                 android:textSize="20sp" />
 
             <ImageButton
@@ -92,7 +96,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/sampleNote1"
+            android:id="@+id/redoxText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:elevation="0dp"
@@ -100,21 +104,50 @@
             android:inputType="textMultiLine"
             android:paddingLeft="30dp"
             android:paddingRight="30dp"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor..." />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.2"
-        android:orientation="vertical">
+            android:text="When writing equations:   \n- charges must balance.    \n- Add water to balance oxygen   \n- Add hydrogen ions to balance water. \n..." />
 
         <LinearLayout
+            android:id="@+id/noteTitle2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"></LinearLayout>
+            android:layout_height="wrap_content"
+            android:background="@color/madeleineTestColor"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/emissionsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/didact_gothic"
+                android:padding="10dp"
+                android:text="Emission Spectra"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/shareButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                app:srcCompat="?attr/actionModeShareDrawable" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/EmissionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="- Energy is added by heat, light or electricity.\n- Electrons absorb energy and are promoted to higher energy shell\n- Electron then drops to..." />
+
     </LinearLayout>
 
 </LinearLayout>
