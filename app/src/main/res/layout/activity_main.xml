@@ -5,9 +5,10 @@
     android:id="@+id/overall_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primaryColor"
+    android:background="@color/background"
     android:orientation="vertical"
     tools:context="com.example.spencetyle.notes_app.MainActivity">
+
 
     <LinearLayout
         android:id="@+id/header"
@@ -22,11 +23,31 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/primaryColor"
+            android:background="@color/background"
             android:fontFamily="@font/concert_one"
             android:gravity="center"
             android:text="Notes App"
             android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Recently Viewed" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Subjects" />
     </LinearLayout>
 
     <LinearLayout
@@ -43,6 +64,7 @@
             android:layout_height="0dp"
             android:layout_margin="20dp"
             android:layout_weight="1"
+            android:background="@color/chemistry"
             android:fontFamily="@font/didact_gothic"
             android:padding="5dp"
             android:text="Chemistry"
@@ -56,6 +78,7 @@
             android:layout_height="0dp"
             android:layout_margin="20dp"
             android:layout_weight="1"
+            android:background="@color/physics"
             android:fontFamily="@font/didact_gothic"
             android:padding="5dp"
             android:text="Physics"
@@ -68,6 +91,7 @@
             android:layout_height="0dp"
             android:layout_margin="25dp"
             android:layout_weight="1"
+            android:background="@color/biology"
             android:fontFamily="@font/didact_gothic"
             android:padding="5dp"
             android:text="Biology"
