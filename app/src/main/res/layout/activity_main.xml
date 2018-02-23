@@ -5,7 +5,7 @@
     android:id="@+id/overall_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/primaryColor"
     android:orientation="vertical"
     tools:context="com.example.spencetyle.notes_app.MainActivity">
 
@@ -22,10 +22,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorAccent"
+            android:background="@color/primaryColor"
+            android:fontFamily="@font/concert_one"
             android:gravity="center"
             android:text="Notes App"
-            android:textSize="35sp" />
+            android:textSize="40sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -40,17 +41,23 @@
             style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_margin="20dp"
             android:layout_weight="1"
+            android:fontFamily="@font/didact_gothic"
+            android:padding="5dp"
             android:text="Chemistry"
-            android:textSize="45sp"
-            />
+            android:textSize="45sp" />
+
 
         <Button
             android:id="@+id/physics_button"
             style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_margin="20dp"
             android:layout_weight="1"
+            android:fontFamily="@font/didact_gothic"
+            android:padding="5dp"
             android:text="Physics"
             android:textSize="45sp" />
 
@@ -59,7 +66,10 @@
             style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_margin="25dp"
             android:layout_weight="1"
+            android:fontFamily="@font/didact_gothic"
+            android:padding="5dp"
             android:text="Biology"
             android:textSize="45sp" />
     </LinearLayout>
