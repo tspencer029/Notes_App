@@ -12,7 +12,7 @@
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="0.2"
         android:orientation="horizontal">
 
@@ -53,49 +53,68 @@
     <LinearLayout
         android:id="@+id/main_container"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/chem_button"
-            style="@android:style/Widget.Button"
+        <LinearLayout
+            android:id="@+id/noteTitle"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:background="@color/chemistry"
-            android:fontFamily="@font/didact_gothic"
-            android:padding="5dp"
-            android:text="Chemistry"
-            android:textSize="45sp" />
+            android:layout_height="wrap_content"
+            android:background="@color/madeleineTestColor"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/noteTitleText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/didact_gothic"
+                android:padding="10dp"
+                android:text="Note Title"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/shareButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                app:srcCompat="?attr/actionModeShareDrawable" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/sampleNote1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor..." />
 
 
-        <Button
-            android:id="@+id/physics_button"
-            style="@android:style/Widget.Button"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:background="@color/physics"
-            android:fontFamily="@font/didact_gothic"
-            android:padding="5dp"
-            android:text="Physics"
-            android:textSize="45sp" />
+    </LinearLayout>
 
-        <Button
-            android:id="@+id/bio_button"
-            style="@android:style/Widget.Button"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_margin="25dp"
-            android:layout_weight="1"
-            android:background="@color/biology"
-            android:fontFamily="@font/didact_gothic"
-            android:padding="5dp"
-            android:text="Biology"
-            android:textSize="45sp" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
