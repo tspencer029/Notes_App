@@ -26,7 +26,7 @@
             android:background="@color/background"
             android:fontFamily="@font/concert_one"
             android:gravity="center"
-            android:text="Notes App"
+            android:text="ZyNotes"
             android:textSize="40sp" />
     </LinearLayout>
 

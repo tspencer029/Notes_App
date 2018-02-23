@@ -25,7 +25,7 @@
             android:background="@color/background"
             android:fontFamily="@font/concert_one"
             android:gravity="center"
-            android:text="Notes App"
+            android:text="ZyNotes"
             android:textSize="40sp" />
 
     </LinearLayout>
@@ -36,14 +36,14 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/recent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Recently Viewed" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/subject"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
