@@ -40,14 +40,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Recently Viewed" />
+            android:text="Recently Viewed"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/subject"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Subjects" />
+            android:layout_weight="1.25"
+            android:freezesText="false"
+            android:includeFontPadding="true"
+            android:text="Subjects"
+            android:textSize="14sp" />
     </LinearLayout>
 
     <LinearLayout
