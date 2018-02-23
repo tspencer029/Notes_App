@@ -42,17 +42,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="Recently Viewed"
+            android:textSize="20sp" />
             android:onClick="onClick"
-            android:text="Recently Viewed" />
+
 
         <Button
             android:id="@+id/subject"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="1.25"
+            android:freezesText="false"
+            android:includeFontPadding="true"
             android:text="Subjects"
+            android:textSize="14sp" />
+            android:layout_weight="1"
             android:onClick="onClick"/>
-
     </LinearLayout>
 
     <LinearLayout
