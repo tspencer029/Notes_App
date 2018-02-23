@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--?xml version="1.0" encoding="UTF-8"?-->
-        <color name="primaryColor">#cfd8dc</color>
-        <color name="primaryLightColor">#ffffff</color>
-        <color name="primaryDarkColor">#9ea7aa</color>
+        <color name="background">#cfd8dc</color>
+        <color name="white">#ffffff</color>
+        <color name="grey">#9ea7aa</color>
         <color name="secondaryColor">#bf360c</color>
-        <color name="secondaryLightColor">#f9683a</color>
+        <color name="chemistry">#f6b36b</color>
+        <color name="physics">#e06666</color>
+        <color name="biology">#b6d7a8</color>
         <color name="secondaryDarkColor">#870000</color>
         <color name="primaryTextColor">#000000</color>
         <color name="secondaryTextColor">#ffffff</color>
