@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical"
-    tools:context="com.example.spencetyle.notes_app.MainActivity">
+    tools:context="com.example.spencetyle.notes_app.subjectsJava">
 
 
     <LinearLayout
